@@ -1,0 +1,497 @@
+@import url(/scss/nullstyle.scss);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+body {
+  font-family: Roboto;
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 35px 0;
+  background: #fdfdfb;
+}
+
+.logo__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.logo__img {
+  margin-right: 3px;
+}
+.logo__name {
+  font-family: "Playfair Display";
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+  color: #555248;
+}
+
+.menu__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.menu__item {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 0;
+}
+.menu__item-1, .menu__item-2, .menu__item-3 {
+  margin-right: 40px;
+}
+.menu__link {
+  color: #555248;
+}
+
+.buy__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.buy__img {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: -5px;
+}
+.buy__heart {
+  padding-top: 4px;
+}
+.buy__ellipse {
+  position: relative;
+  left: 27px;
+}
+
+.collection__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 750px;
+  min-width: 650px;
+  background: #fdfdfb;
+  background-image: url("/img/collections/big_rado.png"), url("/img/collections/halfEllipse.png");
+  background-repeat: no-repeat;
+  background-position: 65%, 45%;
+}
+.collection__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.instock__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-top: 236px;
+  margin: 0 -150px 0 150px;
+}
+.instock__title {
+  font-family: "Playfair Display";
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+  padding-bottom: 16px;
+  margin-left: -60px;
+}
+.instock__line {
+  margin-top: 33px;
+}
+.instock__title-2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+  padding-bottom: 39px;
+}
+.instock__title-3 {
+  font-weight: 300;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  padding-bottom: 64px;
+  max-width: 275px;
+}
+.instock__button {
+  background-image: url("/img/buttons/catalog.png");
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 205px;
+  height: 64px;
+  padding-top: 26px;
+}
+
+.price__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 138px 200px 0 0;
+  min-width: 140px;
+}
+.price__text {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+.price__line {
+  margin: 8px 0 0 15px;
+}
+
+.diameter__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 610px;
+  min-width: 120px;
+}
+.diameter__text {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+  margin-bottom: -116px;
+}
+.diameter__line {
+  margin: 8px 15px 0 0;
+}
+
+.text__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+}
+.text__title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+  margin-top: 50px;
+  text-align: center;
+}
+.text__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+  text-align: right;
+  margin: 10px 225px 0 -225px;
+  min-width: 104px;
+}
+.text__view {
+  display: inline;
+  border-bottom: 1px solid #c4c0b6;
+  padding-bottom: 8px;
+}
+
+.popular__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+.popular__item {
+  background: #fdfdfb;
+  padding-top: 50px;
+}
+
+.item__img {
+  background-image: url("/img/popular/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item__name {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+  margin: -355px 0 355px 30px;
+}
+.item__price {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+  margin: -350px 0 350px 30px;
+}
+.item__details {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
+  color: #1b1a17;
+  margin: -30px 0 30px 30px;
+}
+.item__line {
+  margin: 11px 18px 0 0;
+}
+
+.quality__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 520px;
+  background-image: url(/img/quality/lines_banner.png), url(/img/quality/background_banner_1.png);
+  background-repeat: no-repeat;
+  background-position: right, left;
+  background-color: #fdfdfb;
+}
+.quality__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.picture__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.picture__item-1 {
+  margin-top: 52px;
+}
+.picture__item-2 {
+  margin: 20px 0 0 70%;
+}
+
+.arrows__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.arrows__item-1 {
+  padding-right: 20px;
+}
+.arrows__item-2 {
+  padding-right: 20px;
+}
+.arrows__number {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.description__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20%;
+  min-width: 350px;
+  min-height: 519px;
+}
+.description__title-1 {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+.description__title-2 {
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+  padding: 38px 0 45px 0;
+}
+.description__button {
+  background-image: url("/img/buttons/quality.png");
+  width: 205px;
+  height: 64px;
+  padding-top: 26px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.gallery__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 80px;
+}
+
+.news__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20% 0 0 20px;
+}
+.news__title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+.news__description {
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+  padding: 40px 0 119px 0;
+}
+
+.networks__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.networks__item {
+  padding-right: 20px;
+}
+.networks__item-3 {
+  padding-top: 3px;
+}
+
+.pictures__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 85.5px;
+}
+.pictures__item-1 {
+  padding-right: 10px;
+}
+.pictures__img {
+  padding-bottom: 10px;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #444240;
+  padding: 73px 0 38px 0;
+}
+.footer__item {
+  padding-bottom: 20px;
+  padding: 0 5px;
+}
+.footer__item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 23px;
+}
+.contacts__name {
+  font-family: "Playfair Display";
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  padding: 3px 0 0 5px;
+}
+.contacts__data {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 15px;
+}
+
+.info__title {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 6px 0 27px 0;
+}
+.info__list {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.info__link {
+  padding-bottom: 15px;
+}

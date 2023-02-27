@@ -1,0 +1,482 @@
+//обнуление стилей
+@import url(/scss/nullstyle.scss);
+
+//шрифты
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+body {
+   font-family: Roboto;
+}
+
+.header {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 35px 0;
+      background: #fdfdfb;
+   }
+}
+.logo {
+   &__block {
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   &__img {
+      margin-right: 3px;
+   }
+
+   &__name {
+      font-family: "Playfair Display";
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.14em;
+      color: #555248;
+   }
+}
+.menu {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      //border: 2px solid red;
+   }
+
+   &__item {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 10px 0;
+   }
+
+   &__item-1,
+   &__item-2,
+   &__item-3 {
+      margin-right: 40px;
+   }
+
+   &__link {
+      color: #555248;
+   }
+}
+.buy {
+   &__block {
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   &__img {
+      padding-left: 15px;
+      padding-top: 5px;
+      padding-bottom: -5px;
+   }
+
+   &__heart {
+      padding-top: 4px;
+   }
+
+   &__ellipse {
+      position: relative;
+      left: 27px;
+   }
+}
+
+.collection {
+   &__block {
+      display: flex;
+      justify-content: space-evenly;
+      height: 750px;
+      min-width: 650px;
+      background: #fdfdfb;
+      background-image: url("/img/collections/big_rado.png"), url("/img/collections/halfEllipse.png");
+      background-repeat: no-repeat;
+      background-position: 65%, 45%;
+   }
+
+   &__item {
+      flex: 0 1 20%;
+   }
+}
+.instock {
+   &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      padding-top: 236px;
+      margin: 0 -150px 0 150px;
+   }
+
+   &__title {
+      font-family: "Playfair Display";
+      font-size: 45px;
+      line-height: 60px;
+      color: #1b1a17;
+      padding-bottom: 16px;
+      margin-left: -60px;
+   }
+
+   &__line {
+      margin-top: 33px;
+   }
+
+   &__title-2 {
+      font-family: "Playfair Display";
+      font-size: 30px;
+      line-height: 40px;
+      color: #1b1a17;
+      padding-bottom: 39px;
+   }
+
+   &__title-3 {
+      font-weight: 300;
+      line-height: 21px;
+      color: rgba(27, 26, 23, 0.82);
+      padding-bottom: 64px;
+      max-width: 275px;
+   }
+
+   &__button {
+      background-image: url("/img/buttons/catalog.png");
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 205px;
+      height: 64px;
+      padding-top: 26px;
+   }
+}
+.price {
+   &__block {
+      display: flex;
+      margin: 138px 200px 0 0;
+      min-width: 140px;
+   }
+
+   &__text {
+      font-family: "Prata";
+      font-size: 16px;
+      line-height: 22px;
+      color: #1b1a17;
+   }
+
+   &__line {
+      margin: 8px 0 0 15px;
+   }
+}
+.diameter {
+   &__block {
+      display: flex;
+      padding-top: 610px;
+      min-width: 120px;
+   }
+
+   &__text {
+      font-family: "Prata";
+      font-size: 16px;
+      line-height: 22px;
+      color: #1b1a17;
+      margin-bottom: -116px;
+   }
+
+   &__line {
+      margin: 8px 15px 0 0;
+   }
+}
+
+.text {
+   &__block {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+   }
+
+   &__title {
+      font-family: "Playfair Display";
+      font-size: 32px;
+      line-height: 43px;
+      color: #1b1a17;
+      margin-top: 50px;
+      text-align: center;
+   }
+
+   &__link {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #444240;
+      text-align: right;
+      margin: 10px 225px 0 -225px;
+      min-width: 104px;
+   }
+
+   &__view {
+      display: inline;
+      border-bottom: 1px solid #c4c0b6;
+      padding-bottom: 8px;
+   }
+}
+.popular {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 100px;
+   }
+
+   &__item {
+      background: #fdfdfb;
+      padding-top: 50px;
+   }
+}
+.item {
+   &__img {
+      background-image: url("/img/popular/circle.png");
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
+   &__name {
+      font-family: "Playfair Display";
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: rgba(27, 26, 23, 0.82);
+      margin: -355px 0 355px 30px;
+   }
+
+   &__price {
+      font-family: "Prata";
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(27, 26, 23, 0.82);
+      margin: -350px 0 350px 30px;
+   }
+
+   &__details {
+      font-family: "Playfair Display";
+      font-size: 16px;
+      line-height: 21px;
+      color: #1b1a17;
+      margin: -30px 0 30px 30px;
+   }
+
+   &__line {
+      margin: 11px 18px 0 0;
+   }
+}
+
+.quality {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      min-height: 520px;
+      background-image: url(/img/quality/lines_banner.png), url(/img/quality/background_banner_1.png);
+      background-repeat: no-repeat;
+      background-position: right, left;
+      background-color: #fdfdfb;
+   }
+
+   &__item {
+      flex: 0 1 30%;
+   }
+}
+.picture {
+   &__block {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+   }
+
+   &__item-1 {
+      margin-top: 52px;
+   }
+
+   &__item-2 {
+      margin: 20px 0 0 70%;
+   }
+}
+.arrows {
+   &__block {
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   &__item-1 {
+      padding-right: 20px;
+   }
+
+   &__item-2 {
+      padding-right: 20px;
+   }
+
+   &__number {
+      font-family: "Prata";
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(27, 26, 23, 0.82);
+   }
+}
+.description {
+   &__block {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20%;
+      min-width: 350px;
+      min-height: 519px;
+   }
+
+   &__title-1 {
+      font-family: "Playfair Display";
+      font-size: 32px;
+      line-height: 43px;
+      color: #1b1a17;
+   }
+
+   &__title-2 {
+      font-size: 16px;
+      line-height: 150%;
+      color: #444240;
+      padding: 38px 0 45px 0;
+   }
+
+   &__button {
+      background-image: url("/img/buttons/quality.png");
+      width: 205px;
+      height: 64px;
+      padding-top: 26px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+   }
+}
+
+.gallery {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 80px;
+   }
+}
+.news {
+   &__block {
+      display: flex;
+      flex-direction: column;
+      padding: 20% 0 0 20px;
+   }
+
+   &__title {
+      font-family: "Playfair Display";
+      font-size: 32px;
+      line-height: 43px;
+      color: #1b1a17;
+   }
+
+   &__description {
+      font-size: 16px;
+      line-height: 27px;
+      color: #444240;
+      padding: 40px 0 119px 0;
+   }
+}
+.networks {
+   &__block {
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   &__item {
+      padding-right: 20px;
+   }
+
+   &__item-3 {
+      padding-top: 3px;
+   }
+}
+.pictures {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 85.5px;
+   }
+
+   &__item-1 {
+      padding-right: 10px;
+   }
+
+   &__img {
+      padding-bottom: 10px;
+   }
+}
+
+.footer {
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: #444240;
+      padding: 73px 0 38px 0;
+   }
+
+   &__item {
+      padding-bottom: 20px;
+      padding: 0 5px;
+   }
+
+   &__item-2 {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.contacts {
+   &__logo {
+      display: flex;
+      padding-bottom: 23px;
+   }
+
+   &__name {
+      font-family: "Playfair Display";
+      line-height: 19px;
+      letter-spacing: 0.14em;
+      color: #ffffff;
+      padding: 3px 0 0 5px;
+   }
+
+   &__data {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.75);
+      padding-bottom: 15px;
+   }
+}
+.info {
+   &__title {
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 6px 0 27px 0;
+   }
+
+   &__list {
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.75);
+   }
+
+   &__link {
+      padding-bottom: 15px;
+   }
+}
