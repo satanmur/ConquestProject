@@ -90,7 +90,7 @@ body {
   height: 750px;
   min-width: 650px;
   background: #fdfdfb;
-  background-image: url("/img/collections/big_rado.png"), url("/img/collections/halfEllipse.png");
+  background-image: url("../img/collections/big_rado.png"), url("../img/collections/halfEllipse.png");
   background-repeat: no-repeat;
   background-position: 65%, 45%;
 }
@@ -140,7 +140,7 @@ body {
   max-width: 275px;
 }
 .instock__button {
-  background-image: url("/img/buttons/catalog.png");
+  background-image: url("../img/buttons/catalog.png");
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -237,7 +237,7 @@ body {
 }
 
 .item__img {
-  background-image: url("/img/popular/circle.png");
+  background-image: url("../img/popular/circle.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -281,7 +281,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   min-height: 520px;
-  background-image: url(/img/quality/lines_banner.png), url(/img/quality/background_banner_1.png);
+  background-image: url("../img/quality/lines_banner.png"), url("../img/quality/background_banner_1.png");
   background-repeat: no-repeat;
   background-position: right, left;
   background-color: #fdfdfb;
@@ -355,7 +355,7 @@ body {
   padding: 38px 0 45px 0;
 }
 .description__button {
-  background-image: url("/img/buttons/quality.png");
+  background-image: "../img/buttons/quality.png";
   width: 205px;
   height: 64px;
   padding-top: 26px;
