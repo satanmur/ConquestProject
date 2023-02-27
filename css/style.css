@@ -355,7 +355,7 @@ body {
   padding: 38px 0 45px 0;
 }
 .description__button {
-  background-image: "../img/buttons/quality.png";
+  background-image: url("../img/buttons/quality.png");
   width: 205px;
   height: 64px;
   padding-top: 26px;
